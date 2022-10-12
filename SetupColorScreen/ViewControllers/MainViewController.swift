@@ -14,15 +14,10 @@ protocol SettingsViewControllerDelegate {
 class MainViewController: UIViewController {
     
     var color = Color(red: 1, green: 1, blue: 1)
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(
-            red: color.red,
-            green: color.green,
-            blue: color.blue,
-            alpha: 1
-        )
+        setupBackgrounColor(from: color)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -32,14 +27,21 @@ class MainViewController: UIViewController {
     }
 }
 
+//MARK: - SettingsViewControllerDelegate
 extension MainViewController: SettingsViewControllerDelegate {
     func setColor(from color: Color) {
         self.color = color
-        
+        setupBackgrounColor(from: color)
+    }
+}
+
+//MARK: - Privat metods
+extension MainViewController {
+    private func setupBackgrounColor(from color: Color) {
         view.backgroundColor = UIColor(
-            red: color.red,
-            green: color.green,
-            blue: color.blue,
+            red: CGFloat(color.red),
+            green: CGFloat(color.green),
+            blue: CGFloat(color.blue),
             alpha: 1
         )
     }

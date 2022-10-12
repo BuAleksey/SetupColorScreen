@@ -8,7 +8,7 @@
 import Foundation
 
 struct Color {
-    var red: CGFloat
-    var green: CGFloat
-    var blue: CGFloat
+    var red: Float
+    var green: Float
+    var blue: Float
 }
