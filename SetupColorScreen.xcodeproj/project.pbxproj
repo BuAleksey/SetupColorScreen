@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8746B31228F53738001DA408 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746B31128F53738001DA408 /* Color.swift */; };
 		8746B31428F537D2001DA408 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746B31328F537D2001DA408 /* MainViewController.swift */; };
 		877ACEDE28DF28F600B81A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877ACEDD28DF28F600B81A48 /* AppDelegate.swift */; };
 		877ACEE028DF28F600B81A48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877ACEDF28DF28F600B81A48 /* SceneDelegate.swift */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8746B31128F53738001DA408 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		8746B31328F537D2001DA408 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		877ACEDA28DF28F600B81A48 /* SetupColorScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetupColorScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		877ACEDD28DF28F600B81A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,14 +57,6 @@
 			path = Storybords;
 			sourceTree = "<group>";
 		};
-		8746B30F28F536B4001DA408 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8746B31128F53738001DA408 /* Color.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		8746B31028F536C1001DA408 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +88,6 @@
 			children = (
 				8746B30D28F53689001DA408 /* ViewControllers */,
 				8746B30E28F536A3001DA408 /* Storybords */,
-				8746B30F28F536B4001DA408 /* Models */,
 				8746B31028F536C1001DA408 /* App */,
 				877ACEE628DF28F700B81A48 /* Assets.xcassets */,
 			);
@@ -177,7 +166,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				877ACEE228DF28F600B81A48 /* SettingsViewController.swift in Sources */,
-				8746B31228F53738001DA408 /* Color.swift in Sources */,
 				877ACEDE28DF28F600B81A48 /* AppDelegate.swift in Sources */,
 				877ACEE028DF28F600B81A48 /* SceneDelegate.swift in Sources */,
 				8746B31428F537D2001DA408 /* MainViewController.swift in Sources */,
