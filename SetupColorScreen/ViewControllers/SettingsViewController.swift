@@ -146,10 +146,6 @@ extension SettingsViewController {
 
 // MARK: - UITextFieldDelegate
 extension SettingsViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-    }
-    
     func textFieldDidEndEditing(_ textField: UITextField) {
         guard let newValue = textField.text else {
             showAlert(title: "Wrong", message: "Please enter correct value")
